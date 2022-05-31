@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MainPage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo.png" alt="logo">
+            <img id="search-icon" src="images\search-white.png">
+            <input type="text" id="search-bar">
+            <div>
+                <img class="notification" src="images/notification-white.png" onclick="deleteNum()">
+                <p id="notification-num" onclick="deleteNum()"></p>
+                <img class="settings" src="images/settings-white.png">
+            </div>
+            <a href="login.html">
+                <img class="user-image" src="images/user.png">
+                <p id="username-el">Username</p>
+            </a>
+        </header>
+
+        <div class="post-1">
+            <div class="post1">
+                <button type="button" class="populares">💯 POPULARES </button>
+                <button type="button" class="recientes">🕐 RECIENTES </button>
+                <button type="button" class="controversial">⚡ CONTROVERSIAL </button>
+                <button type="button" class="newPost" onclick="newPost()">POST</button>
+
+            </div>
+            <img class="post1-img" src="images/user.png">
+            <textarea type="text" class="textarea-post1"></textarea>
+            <textarea type="text" class="textarea1-post1"></textarea>
+        </div>
+
+        <div class="post-2">
+            <div class="post2"></div>
+            <a href="https://twitter.com/StephenCurry30">
+                <img class="post2-userimg" src="images/user2.png">
+                <label type="text" id="user-post2">Stephen Curry</label>
+            </a>
+            <label type="text" id="title-post2">La naranja es la mejor fruta.</label>
+            <label id="naranja-curry">Tiene forma de pelota de basketball 🥶💯 #Naranja</label>
+            <img class="naranja-basketball" src="images/naranja-basketball.jpg">
+
+            <div class="like-dislike"></div>
+            <img class="like-btn" src="images/like.png" onclick="like()">
+            <img class="dislike-btn" src="images/dislike.png" onclick="dislike()">
+            <p class="counter">0</p>
+
+            <img class="comment-btn" src="images/bubble-chat-white.png">
+            <img class="share-btn" src="images/share-white.png">
+        </div>
+
+        <div class="post-3">
+            <div class="post3"></div>
+            <a href="https://twitter.com/kendricklamar">
+                <img class="post3-userimg" src="images/user3.png">
+                <label type="text" id="user-post3">Kendrick Lamar</label>
+            </a>
+            <label type="text" id="title-post3">Tiene que ser la manzana.</label>
+            <label id="naranja-kendrick">La fruta prohibida 🍎 #Manzana</label>
+            <img class="apple-img" src="images/apple.jpg">
+
+            <div class="like-dislike3"></div>
+            <img class="like-btn3" src="images/like.png" onclick="like2()">
+            <img class="dislike-btn3" src="images/dislike.png" onclick="dislike2()">
+            <p class="counter3">0</p>
+
+            <img class="comment-btn3" src="images/bubble-chat-white.png">
+            <img class="share-btn3" src="images/share-white.png">
+        </div>
+
+        <div class="topdiv">
+            <label id="top">TOP 5</label>
+            <div class="top"></div>
+            <a href="https://es.wikipedia.org/wiki/Manzana">
+                <img class="apple" src="images/top5/apple.png">
+                <label id="top1">1.-</label>
+                <label id="manzana">Manzana</label>
+            </a>
+            <a href="https://es.wikipedia.org/wiki/Banana">
+                <img class="banana" src="images/top5/banana.png">
+                <label id="top2">2.-</label>
+                <label id="platano">Platano</label>
+            </a>
+            <a href="https://es.wikipedia.org/wiki/Limón">
+                <img class="lemon" src="images/top5/lemon.png">
+                <label id="top3">3.-</label>
+                <label id="limon">Limon</label>
+            </a>
+            <a href="https://es.wikipedia.org/wiki/Citrullus_lanatus">
+                <img class="watermelon" src="images/top5/watermelon.png">
+                <label id="top4">4.-</label>
+                <label id="sandia">Sandia</label>
+            </a>
+            <a href="https://es.wikipedia.org/wiki/Naranja_(fruta)">
+                <img class="orange" src="images/top5/orange.png">
+                <label id="top5">5.-</label>
+                <label id="naranja">Naranja</label>
+            </a>
+        </div>
+
+        <div class="contactdiv">
+            <label id="about-us">ABOUT US</label>
+            <div class="contact"></div>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="email">Email</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="twitter">Twitter</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="instagram">Instagram</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="reddit">Reddit</a>
+            <label id="rights">Cornucopia Inc © 2022. All rights reserved</label>
+        </div>
+        
+        
+        
+
+
+
+        <script src="main.js"></script>
+    </body>
+</html>
